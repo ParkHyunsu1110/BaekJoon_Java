@@ -1,0 +1,29 @@
+package Q4344;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int testCase = sc.nextInt();
+		for(int i=0; i<testCase; i++) {
+			int studentCase = sc.nextInt();
+			int studentScore[] = new int[studentCase];
+			for(int j=0; j<studentCase; j++) studentScore[j] = sc.nextInt();
+			double sum=0;
+			for(int j=0; j<studentCase; j++) sum += studentScore[j];
+			double aver=sum/studentCase;
+			int cnt=0;
+			for(int j=0; i<studentCase; j++) {
+				if(studentScore[j] > aver) cnt++;
+			}
+			double averCase= cnt / studentCase * 100;
+			System.out.println(averCase + "%");
+		}
+		
+		
+	}
+
+}

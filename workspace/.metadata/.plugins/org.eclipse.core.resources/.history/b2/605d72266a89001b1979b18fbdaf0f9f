@@ -1,0 +1,26 @@
+package Q2869;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		int V = sc.nextInt();
+		int now=0, day=0;
+		while(true) {
+			if(A<V) {
+				now += A - B;
+				day++;
+			}
+			else {
+				break;
+			}
+		}
+		System.out.println(day);
+	}
+
+}

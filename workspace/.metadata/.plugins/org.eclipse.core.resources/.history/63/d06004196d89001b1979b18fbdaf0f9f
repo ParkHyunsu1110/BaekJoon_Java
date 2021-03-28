@@ -1,0 +1,20 @@
+package Q10250;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for(int i=0; i<T; i++) {
+			int H = sc.nextInt();
+			int W = sc.nextInt();
+			int N = sc.nextInt();
+			if(H%N == 0) System.out.println((H * 100) + (H / N));
+			else System.out.println((H % N * 100) + ((N / H) + 1));
+		}
+	}
+}

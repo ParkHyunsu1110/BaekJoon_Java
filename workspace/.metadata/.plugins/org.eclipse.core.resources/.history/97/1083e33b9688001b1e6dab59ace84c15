@@ -1,0 +1,22 @@
+package Q2577;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int A = sc.nextInt(), B = sc.nextInt(), C = sc.nextInt();
+		int arr[] = new int[10];
+		int Prod = A * B * C;
+		while(Prod > 0) {
+			arr[Prod % 10]++;
+			Prod /= 10;
+		}
+		for(int i=0; i<arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
+}

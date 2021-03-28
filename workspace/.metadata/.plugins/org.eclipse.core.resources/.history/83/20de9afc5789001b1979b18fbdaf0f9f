@@ -1,0 +1,19 @@
+package Q2908;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String A = sc.next(), B = sc.next();
+		String arrA[] = A.split("");
+		String newA="";
+		for(int i=0; i<3; i++) {
+			newA.concat(arrA[A.length()]);
+		}
+		System.out.println(newA);
+		
+	}
+}

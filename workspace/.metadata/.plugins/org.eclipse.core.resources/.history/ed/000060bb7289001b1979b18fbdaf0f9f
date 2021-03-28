@@ -1,0 +1,26 @@
+package Q2839;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		
+		int count=0;
+		if(N>=5) {
+			count += N / 5;
+			if(N % 5 != 0) {
+				count += (N % 5) / 3;
+				if((N % 5) % 3 != 0) {
+					count = -1;
+				}
+			}
+		} else if(N < 5) {
+			if(N % 3 == 0) count++;
+			else count = -1;
+		}
+	}
+}
